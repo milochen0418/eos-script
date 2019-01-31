@@ -1,5 +1,9 @@
 # Environment 
-Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04
+Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04  
+And in Ubuntu 16.04, you need to choose the following packages.  
+https://github.com/eosio/eos/releases/download/v1.5.0/eosio_1.5.0-1-ubuntu-16.04_amd64.deb   
+https://github.com/EOSIO/eosio.cdt/releases/download/v1.4.1/eosio.cdt-1.4.1.x86_64.deb  
+
 
 # Download scripts
 $ cd ~  
