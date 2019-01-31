@@ -7,24 +7,24 @@ $ git clone https://github.com/milochen0418/eos-script.git
 $ cd ~/eos-script  
 
 # install basic package in ubuntu 16.04
-$ sudo apt-get install aptitude
+$ sudo apt-get install aptitude  
 
 # Install EOS package in installation folder
 ## remove previous packages
-$ dpkg -i | grep eosio 
-Makesure there is no package of eosio. If there is, you can do it to remove.
-$ sudo aptitude remove EOSIO_PACKAGE
-## start oinstall new packages for eosio
-$ cd ~/eos-script/installation 
-$ ./installEosio.sh
-$ ./installCDT.sh
+$ dpkg -i | grep eosio  
+Makesure there is no package of eosio. If there is, you can do it to remove.  
+$ sudo aptitude remove EOSIO_PACKAGE  
+## start oinstall new packages for eosio  
+$ cd ~/eos-script/installation   
+$ ./installEosio.sh  
+$ ./installCDT.sh  
 
 # start and monitor nodeos 
-To make sure nobody use http port first, and then
-
-$ cd ~/eos-script/nodeos/
-$ ./startNodeos.sh
-$ ./monitorNodeos.sh
+To make sure nobody use http port first, and then  
+  
+$ cd ~/eos-script/nodeos/  
+$ ./startNodeos.sh  
+$ ./monitorNodeos.sh  
 
 
 
