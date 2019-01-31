@@ -27,4 +27,24 @@ $ ./startNodeos.sh
 $ ./monitorNodeos.sh  
 
 
+# Wallet Management
+The folder ~/eos-script-wallet and files in it is created by our wallet management script  
+$ cd ~/eos-script/nodeos  
+
+## Show wallets status 
+Show wallets status , username and password  
+$ ./checkWallet.sh  
+
+## Clean all walelts
+Clean all wallets  
+$ ./cleanWallet.sh  
+
+## Add new wallet 
+$ ./createWallet.sh USER_NAME  
+if you don't have USER_NAME, then the default user name is 'default'  
+
+## unlock some wallet
+Unlock the wallet of some user 
+$ ./unlockWallet.sh USER_NAME
+ 
 
