@@ -75,3 +75,28 @@ $ ./listWalletKey.sh USER_NAME
 field_1 : public key  
 field_2 : private key  
 
+## [keys in a wallet] import private key
+./importWalletKey.sh WALLET_NAME PRIVATE_KEY
+./importWalletKey.sh PRIVATE_KEY
+
+## [keys in a wallet] query private_key in a specific wallet by public key
+./queryWalletKey.sh WALLET_NAME PUBLIC_KEY
+./queryWalletKey.sh PUBLIC_KEY
+
+
+## [keys in a wallet] two different wallet can own same public/private key pair. and they can import each other
+For example, this is what I do
+$ ./listWalletKey.sh default
+EOS5P22BTSZmeufVYXVPsD7h6fzq7eeujrzpYQ4d7XJffZfumDK1T   5KE4PS6QG9E1dCeBYpaV5ehUy2vxLgMom3dTVtC7Wqdsj7yxtLB
+EOS6iBjwKpjSpoJpVGE4aT9Uu8ioRut7F28QFJHiPRAWa9bMCYx9y   5JjNKVuTnt4xV54mkhgydZDyCiCUsPt78ZxhfYfVFEX7fdTo2jT
+EOS8LSL1ybcvCqBeD8YMaANR36Rq25HZ4x6CKxSjp7UQsNe6ejm5A   5K94TBAZyzFMiAkx61iQdGA5krDBCAREmKiUkKJCnt6Sgv2DqJZ
+$ ./listWalletKey.sh milochen
+EOS5P22BTSZmeufVYXVPsD7h6fzq7eeujrzpYQ4d7XJffZfumDK1T   5KE4PS6QG9E1dCeBYpaV5ehUy2vxLgMom3dTVtC7Wqdsj7yxtLB
+EOS6iBjwKpjSpoJpVGE4aT9Uu8ioRut7F28QFJHiPRAWa9bMCYx9y   5JjNKVuTnt4xV54mkhgydZDyCiCUsPt78ZxhfYfVFEX7fdTo2jT
+EOS6yKTZZihDGdGW4XiF4jt3JMbAeQNB6EY3CgefEoRTwM97ZGiWA   5JFQ3EL792akrYDxA3Kb1qNsMNCBfhadXhqUu26wYhsEaB4T7xL
+EOS75ZdQjTPNjYRUyjoPjFWxayNbByfEeZqwdfHA24M2fxtZDWfeS   5KA6Q8D9d5P4Hr66PDJ7o5ouW25acZLAMrB1v4ZQYLvDwN1Qkkv
+EOS7KJukumkMnaoTUPcfxmrTyiK3iTDvY1RiaNrjtqdLKiSupXDPd   5JkmpySyrjeU1Mqqvcrmtk1VRQ3PqMVn9zbhrNJeR3icvXZkCgx
+EOS8LSL1ybcvCqBeD8YMaANR36Rq25HZ4x6CKxSjp7UQsNe6ejm5A   5K94TBAZyzFMiAkx61iQdGA5krDBCAREmKiUkKJCnt6Sgv2DqJZ
+EOS8VGCH7tQb6cp4z7xDjL1p9DXdBWeb423HvugaTBCNeKwG9WkLx   5Jou3cBHe7npihX2rbAhFqAhprLnM4o84RXZ24PZuwBzdhaRzgc
+
+
