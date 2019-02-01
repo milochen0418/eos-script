@@ -12,7 +12,16 @@ fi
 mkdir -p ~/eos-script-wallet/
 touch $WALLET_INFO_FILE
 touch $PASSWD_FILE
-cleos wallet create --name $NAME --file $TMP_PASSWD_FILE
-echo -e "$NAME\t$(cat $TMP_PASSWD_FILE)" >> $WALLET_INFO_FILE
+
+if grep --quiet $NAME $WALLET_INFO_FILE
+then 
+	echo "The wallet name $NAME is repeat."
+else 
+	cleos wallet create --name $NAME --file $TMP_PASSWD_FILE
+	echo -e "$NAME\t$(cat $TMP_PASSWD_FILE)" >> $WALLET_INFO_FILE
+fi
+
+#cleos wallet create --name $NAME --file $TMP_PASSWD_FILE
+#echo -e "$NAME\t$(cat $TMP_PASSWD_FILE)" >> $WALLET_INFO_FILE
 rm -f $TMP_PASSWD_FILE
 
