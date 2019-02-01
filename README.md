@@ -13,6 +13,7 @@ $ cd ~/eos-script
 
 # install basic package in ubuntu 16.04
 $ sudo apt-get install aptitude  
+$ sudo apt-get install jq
 
 # [Install] EOS package in installation folder
 ## remove previous packages
@@ -40,7 +41,7 @@ $ ./monitorNodeos.sh
 $ cd ~/eos-script/nodeos/  
 $ ./restartNodeos.sh  
 
-# [Wallet] Wallet Management
+# [Wallet] Wallet Management and WalletKey Management
 The folder ~/eos-script-wallet and files in it is created by our wallet management script  
 $ cd ~/eos-script/nodeos  
 
@@ -64,3 +65,13 @@ $ ./unlockWallet.sh USER_NAME
 open the wallet of some user  
 $ ./openWallet.sh USER_NAME  
 When you open it, open is mean lock, so if you need to unlock it, just call ./unlockWallet.sh  
+
+## [keys in a wallet] add key for specific wallet user with USER_NAME. the name will be default if you don't set USER_NAME
+$ ./addWalletKey.sh USER_NAME  
+
+## [keys in a wallet] list all keys for specific wallet user with USER_NAME. the name will be default if you don't set USER_NAME
+
+$ ./listWalletKey.sh USER_NAME  
+field_1 : public key  
+field_2 : private key  
+
