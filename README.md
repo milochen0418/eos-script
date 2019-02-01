@@ -13,7 +13,7 @@ $ cd ~/eos-script
 # install basic package in ubuntu 16.04
 $ sudo apt-get install aptitude  
 
-# Install EOS package in installation folder
+# [Install] EOS package in installation folder
 ## remove previous packages
 $ dpkg -i | grep eosio  
 Makesure there is no package of eosio. If there is, you can do it to remove.  
@@ -22,16 +22,24 @@ $ sudo aptitude remove EOSIO_PACKAGE
 $ cd ~/eos-script/installation   
 $ ./installEosio.sh  
 $ ./installCDT.sh  
+## The most SIMPLE method is here
+$ cd ~/eos-script/installation  
+$ ./reinstallAll.sh  
 
-# start and monitor nodeos 
+# [Nodoes] start and monitor nodeos 
 To make sure nobody use http port first, and then  
-  
+## stop nodeos  
+$ cd ~/eos-script/nodeos/  
+$ ./stopNodeos.sh  
+## start and monitor nodeos
 $ cd ~/eos-script/nodeos/  
 $ ./startNodeos.sh  
 $ ./monitorNodeos.sh  
+## The most SIMPLE method
+$ cd ~/eos-script/nodeos/  
+$ ./restartNodeos.sh  
 
-
-# Wallet Management
+# [Wallet] Wallet Management
 The folder ~/eos-script-wallet and files in it is created by our wallet management script  
 $ cd ~/eos-script/nodeos  
 
@@ -43,15 +51,15 @@ $ ./checkWallet.sh
 Clean all wallets  
 $ ./cleanWallet.sh  
 
-## Add new wallet 
+## Add new wallet  
 $ ./createWallet.sh USER_NAME  
 if you don't have USER_NAME, then the default user name is 'default'  
 
-## unlock some wallet
-Unlock the wallet of some user 
-$ ./unlockWallet.sh USER_NAME
+## unlock some wallet  
+Unlock the wallet of some user  
+$ ./unlockWallet.sh USER_NAME  
  
 ## open some wallet
-open the wallet of some user
-$ ./openWallet.sh USER_NAME
-When you open it, open is mean lock, so if you need to unlock it, just call ./unlockWallet.sh
+open the wallet of some user  
+$ ./openWallet.sh USER_NAME  
+When you open it, open is mean lock, so if you need to unlock it, just call ./unlockWallet.sh  
