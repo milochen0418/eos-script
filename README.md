@@ -96,7 +96,6 @@ EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV   5KQwrPbwdL6PhXujxW37FSSQ
 It's mean show public key, \t and then show private key  
 
 
-
 ## [keys in a wallet] two different wallet can own same public/private key pair. and they can import each other
 For example, this is what I do  
 $ ./listWalletKey.sh default  
@@ -116,4 +115,23 @@ EOS8LSL1ybcvCqBeD8YMaANR36Rq25HZ4x6CKxSjp7UQsNe6ejm5A   5K94TBAZyzFMiAkx61iQdGA5
 EOS8VGCH7tQb6cp4z7xDjL1p9DXdBWeb423HvugaTBCNeKwG9WkLx   5Jou3cBHe7npihX2rbAhFqAhprLnM4o84RXZ24PZuwBzdhaRzgc  
 </font>  
 
+
+
+# [Account] Account Management
+$ cd ~/eos-script/nodeos
+## list account
+$ ./listAccount.sh  
+## create account  
+$ ./createAccount.sh  
+## get account info  
+$ ./getAccount.sh ACCOUNT_NAME
+
+## Some configuration
+### eosioPrivateKey.sh  
+Every new EOSIO chain has a default "system" user called "eosio". This account is used to setup the chain by loading system contracts that dictate the governance and consensus of the EOSIO chain. Every new EOSIO chain comes with a development key, and this key is the same. Load this key to sign transactions on behalf of the system user (eosio).   
+In above description,   
+The variable EOSIO_PRIVATE_KEY  we set in eosioPrivateKey is development key for this eosio account in EOSIO chian.  
+### initAccount.sh
+source initAccount.sh will make sure you has basic wallet setting with info of eosio(account name, private key in default wallet , public key in default wallet)   
+The shell script who sourcing initAccount.sh will have EOSIO_PRIVATE_KEY and EOSIO_PUBLIC_KEY. The implementation of create account need to use EOSIO_PUBLIC_KEY.  
 
