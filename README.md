@@ -51,4 +51,7 @@ if you don't have USER_NAME, then the default user name is 'default'
 Unlock the wallet of some user 
 $ ./unlockWallet.sh USER_NAME
  
-
+## open some wallet
+open the wallet of some user
+$ ./openWallet.sh USER_NAME
+When you open it, open is mean lock, so if you need to unlock it, just call ./unlockWallet.sh
