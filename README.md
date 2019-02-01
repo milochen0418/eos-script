@@ -99,6 +99,7 @@ It's mean show public key, \t and then show private key
 
 ## [keys in a wallet] two different wallet can own same public/private key pair. and they can import each other
 For example, this is what I do  
+- <font size="2">Standard Font </font>  
 $ ./listWalletKey.sh default  
 <font size="3">
 EOS5P22BTSZmeufVYXVPsD7h6fzq7eeujrzpYQ4d7XJffZfumDK1T   5KE4PS6QG9E1dCeBYpaV5ehUy2vxLgMom3dTVtC7Wqdsj7yxtLB  
