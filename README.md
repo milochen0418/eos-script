@@ -80,8 +80,21 @@ field_2 : private key
 ./importWalletKey.sh PRIVATE_KEY
 
 ## [keys in a wallet] query private_key in a specific wallet by public key
-./queryWalletKey.sh WALLET_NAME PUBLIC_KEY
-./queryWalletKey.sh PUBLIC_KEY
+./queryWalletKey.sh WALLET_NAME SOME_KEY KEY_TYPE  
+KEY_TYPE= private OR public  
+for example   
+$ ./queryWalletKey.sh default EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV private  
+5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3  
+It's mean search private key 
+   
+$ ./queryWalletKey.sh default EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV public  
+EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV    
+It's mean search public key  
+  
+$./queryWalletKey.sh default EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV any  
+EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV   5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3  
+It's mean show public key, \t and then show private key
+
 
 
 ## [keys in a wallet] two different wallet can own same public/private key pair. and they can import each other
