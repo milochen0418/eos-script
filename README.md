@@ -3,7 +3,8 @@ Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu
 And in Ubuntu 16.04, you need to choose the following packages.  
 https://github.com/eosio/eos/releases/download/v1.5.0/eosio_1.5.0-1-ubuntu-16.04_amd64.deb   
 https://github.com/EOSIO/eosio.cdt/releases/download/v1.4.1/eosio.cdt-1.4.1.x86_64.deb  
-
+If your Ubuntu 16.04 is first time to use EOS, please call command keosd first and close it.
+If you didn't do it, then some plugin for nodoes will not work.
 
 # Download scripts
 $ cd ~  
