@@ -18,6 +18,7 @@ $ sudo apt-get update
 $ sudo apt-get install libstdc++6
 $ sudo updatedb
 
+Or you can run install_basic_package.sh provided by eos-script project
 # Download scripts
 $ cd ~  
 $ git clone https://github.com/milochen0418/eos-script.git   
