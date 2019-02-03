@@ -6,14 +6,22 @@ https://github.com/EOSIO/eosio.cdt/releases/download/v1.4.1/eosio.cdt-1.4.1.x86_
 If your Ubuntu 16.04 is first time to use EOS, please call command keosd first and close it.
 If you didn't do it, then some plugin for nodoes will not work.
 
+
+# install these basic packages in your new ubuntu 16.04
+$ sudo apt-get install aptitude  
+$ sudo apt-get install jq
+$ sudo apt-get install locate 
+$ sudo apt-get install curl wget git 
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+$ sudo apt-get update
+$ sudo apt-get install libstdc++6
+$ sudo updatedb
+
 # Download scripts
 $ cd ~  
 $ git clone https://github.com/milochen0418/eos-script.git   
 $ cd ~/eos-script  
-
-# install basic package in ubuntu 16.04
-$ sudo apt-get install aptitude  
-$ sudo apt-get install jq
 
 # [Install] EOS package in installation folder
 ## remove previous packages
