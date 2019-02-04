@@ -1,3 +1,9 @@
+Utility 
+=====================
+checkNodeosEndpoints.sh
+eosioPrivateKey.sh
+getEosioPublicKey.sh
+listScripts.sh
 
 Wallet Management - manage wallet
 ========================
