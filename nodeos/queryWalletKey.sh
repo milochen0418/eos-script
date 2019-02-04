@@ -25,8 +25,8 @@ fi
 
 
 
-PRIVATE_KEY=$(./listWalletKey.sh $NAME | grep $SOME_KEY | awk '{printf $2}' )
-PUBLIC_KEY=$(./listWalletKey.sh $NAME | grep $SOME_KEY | awk '{printf $1}' )
+PRIVATE_KEY=$(listWalletKey.sh $NAME | grep $SOME_KEY | awk '{printf $2}' )
+PUBLIC_KEY=$(listWalletKey.sh $NAME | grep $SOME_KEY | awk '{printf $1}' )
 if [ "$KEY_TYPE" = "private" ] 
 then
 	echo -e "$PRIVATE_KEY"

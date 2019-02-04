@@ -1,3 +1,3 @@
 #!/bin/bash
-./stopNodeos.sh
-./startNodeos.sh
+stopNodeos.sh
+startNodeos.sh

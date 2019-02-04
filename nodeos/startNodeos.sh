@@ -18,4 +18,4 @@ nodeos -e -p eosio \
 --filter-on='*' >> nodeos.log 2>&1 &
 
 
-echo "After exec nodeos, please use ./monitorNodeos.sh to observe log"
+echo "After exec nodeos, please use monitorNodeos.sh to observe log"

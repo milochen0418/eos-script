@@ -18,7 +18,7 @@ fi
 
 
 
-#PRIVATE_KEY=$(./listWalletKey.sh $NAME | grep $PUBLIC_KEY | awk '{printf $2}' )
+#PRIVATE_KEY=$(listWalletKey.sh $NAME | grep $PUBLIC_KEY | awk '{printf $2}' )
 #echo -e "$NAME\t$PUBLIC_KEY\t$PRIVATE_KEY";
 
 
