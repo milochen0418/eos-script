@@ -22,3 +22,10 @@ createAccount.sh
 getAccount.sh
 initAccount.sh
 listAccount.sh
+
+Nodeos Management - manage nodoes process
+=======================
+monitorNodeos.sh
+restartNodeos.sh
+startNodeos.sh
+stopNodeos.sh
