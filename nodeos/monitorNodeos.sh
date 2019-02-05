@@ -1,1 +1,1 @@
-tail -f nodeos.log
+tail -f $(dirname $0)/nodeos.log

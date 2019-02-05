@@ -15,7 +15,7 @@ nodeos -e -p eosio \
 --contracts-console \
 --http-validate-host=false \
 --verbose-http-errors \
---filter-on='*' >> nodeos.log 2>&1 &
+--filter-on='*' >> $(dirname $0)/nodeos.log 2>&1 &
 
 
 echo "After exec nodeos, please use monitorNodeos.sh to observe log"

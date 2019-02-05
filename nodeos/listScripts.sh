@@ -1,2 +1,2 @@
 #!/bin/bash
-cat scripts-help.txt
+cat $(dirname $0)/scripts-help.txt
