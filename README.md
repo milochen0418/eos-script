@@ -1,3 +1,45 @@
+
+# Easy Usage
+## Step 1. First time to use 
+$ cd ~/  
+$ git clone https://github.com/milochen0418/eos-script  
+$ source ~/eos-script/nodeos/use-eos-script.sh  
+$ cd ~/eos-script/  
+$ ./install_basic_package.sh  
+$ cd ~/eos-script/  
+$ ./envReboot.sh  
+
+recall the following script whenever you want to have new clean environment (no wallet, account, key ... everything was been clean. And packages also be reinstall again) 
+$ ./envReboot 
+
+## Step 2. Start to test first smart contract
+Open another terminal
+
+$ cd /tmp  
+go to any folder your want. we go to tmp folder here  
+  
+$ git clone https://github.com/milochen0418/eos-contract-helloworld  
+$ cd eos-contract-helloworld  
+$ source ~/eos-script/nodeos/use-eos-script.sh   
+Use the eos script  
+
+$ ./build.sh  
+The building result will show in hello subfolder  
+  
+$ createAccount.sh hello  
+To create the account named hello  
+  
+$ ./deploy.sh hello hello  
+To deploy your hello contract with hello account.
+
+If you want to redploy it in new clear environment, then   
+you can reset environment by calling   
+./envReboot.sh in the volder  ~/eos-script/installation/  
+
+
+
+Another complicated detail should not care about by new developer in above.
+
 # Environment 
 Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04  
 And in Ubuntu 16.04, you need to choose the following packages.  
