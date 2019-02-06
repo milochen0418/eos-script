@@ -26,11 +26,15 @@ Use the eos script
 $ ./build.sh  
 The building result will show in hello subfolder  
   
-$ createAccount.sh hello  
-To create the account named hello  
+$ createAccount.sh user1
+$ createAccount.sh user2
+To create two account, user1 and user2 
   
-$ ./deploy.sh hello hello  
-To deploy your hello contract with hello account.
+$ ./deploy.sh user1
+To deploy your built result to user1 account.
+
+user2 call function in user1 contract   (user1 is a contract name. also account name too... the same?)
+$ cleos push action user1 hi '["user"]' -p user2@active
 
 If you want to redploy it in new clear environment, then   
 you can reset environment by calling   
