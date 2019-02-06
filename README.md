@@ -38,7 +38,8 @@ you can reset environment by calling
 
 
 
-Another complicated detail should not care about by new developer in above.
+
+Another complicated detail should not care about by new developer in following. 
 
 # Environment 
 Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04  
