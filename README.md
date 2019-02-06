@@ -14,7 +14,6 @@ $ ./envReboot
 
 ## Step 2. Start to test first smart contract
 Open another terminal
-
 $ cd /tmp  
 go to any folder your want. we go to tmp folder here  
   
@@ -35,7 +34,8 @@ To deploy your built result to user1 account.
 
 user2 call function in user1 contract   (user1 is a contract name. also account name too... the same?)
 $ cleos push action user1 hi '["user"]' -p user2@active
-
+$ cleos push action user1 hiauth '["user"]' -p user2@active  <-- this should not be work after calling it 
+$ cleos push action user1 hiauth '["user2"]' -p user2@active <-- this should be work after calling it
 If you want to redploy it in new clear environment, then   
 you can reset environment by calling   
 ./envReboot.sh in the volder  ~/eos-script/installation/  
