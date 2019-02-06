@@ -36,6 +36,9 @@ $ ./installCDT.sh
 ## The most SIMPLE method is here
 $ cd ~/eos-script/installation  
 $ ./reinstallAll.sh  
+reinstallAll.sh script will use the *deb you downloaded before, If you want to re-download *.deb   
+and install them, then use this command  
+$ ./reinstallAll.sh -f  
 
 # [Nodoes] start and monitor nodeos 
 To make sure nobody use http port first, and then  
