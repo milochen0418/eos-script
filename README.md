@@ -43,7 +43,7 @@ $ cleos push action user1 hiauth '["user"]' -p user2@active  <-- this should not
 $ cleos push action user1 hiauth '["user2"]' -p user2@active <-- this should be work after calling it  
 If you want to redploy it in new clear environment, then     
 you can reset environment by calling     
-./envReboot.sh in the volder  ~/eos-script/installation/    
+./envReboot.sh in the folder  ~/eos-script/installation/    
 
 
 # More information    
