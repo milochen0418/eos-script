@@ -1,3 +1,8 @@
+# Purpose of eos-script
+![image](https://files.readme.io/582e059-411_DevRelations_NodeosGraphic_Option3.png)
+The project eos-script is a script wrapper for nodeos, cleos and keosd, It's more user-friendly to new dApp developer.  
+It's higher abstraction layer for Nodeos management, Account management, Wallet Management and Key managements in Wallet.    
+The abstraction layer is more closely to normal user and the higher abstraction layer is implemented by nodeos, cleos and keosd currently.   
 
 # Easy Usage
 ## Step 1. First time to use 
@@ -41,10 +46,10 @@ you can reset environment by calling
 ./envReboot.sh in the volder  ~/eos-script/installation/  
 
 
-
-
-Another complicated detail should not care about by new developer in following. 
-
+# More information    
+In the following, It's detail about how to impleemnt eos-script.   
+The complicated detail should not be cared by new developer until you want to know what happend behind the script.  
+  
 # Environment 
 Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04  
 And in Ubuntu 16.04, you need to choose the following packages.  
