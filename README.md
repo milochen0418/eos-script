@@ -30,25 +30,25 @@ Use the eos script
 $ ./build.sh  
 The building result will show in hello subfolder  
   
-$ createAccount.sh user1
-$ createAccount.sh user2
-To create two account, user1 and user2 
+$ createAccount.sh user1  
+$ createAccount.sh user2  
+To create two account, user1 and user2   
   
-$ ./deploy.sh user1
-To deploy your built result to user1 account.
+$ ./deploy.sh user1  
+To deploy your built result to user1 account.    
 
-user2 call function in user1 contract   (user1 is a contract name. also account name too... the same?)
-$ cleos push action user1 hi '["user"]' -p user2@active
-$ cleos push action user1 hiauth '["user"]' -p user2@active  <-- this should not be work after calling it 
-$ cleos push action user1 hiauth '["user2"]' -p user2@active <-- this should be work after calling it
-If you want to redploy it in new clear environment, then   
-you can reset environment by calling   
-./envReboot.sh in the volder  ~/eos-script/installation/  
+user2 call function in user1 contract   (user1 is a contract name. also account name too... the same?)  
+$ cleos push action user1 hi '["user"]' -p user2@active  
+$ cleos push action user1 hiauth '["user"]' -p user2@active  <-- this should not be work after calling it   
+$ cleos push action user1 hiauth '["user2"]' -p user2@active <-- this should be work after calling it  
+If you want to redploy it in new clear environment, then     
+you can reset environment by calling     
+./envReboot.sh in the volder  ~/eos-script/installation/    
 
 
 # More information    
-In the following, It's detail about how to impleemnt eos-script.   
-The complicated detail should not be cared by new developer until you want to know what happend behind the script.  
+In the following, It's detail about how to impleemnt eos-script.     
+The complicated detail should not be cared by new developer until you want to know what happend behind the script.    
   
 # Environment 
 Please use Ubuntu 16.04 to run this eos-script. the eos-script is work on Ubuntu 16.04  
