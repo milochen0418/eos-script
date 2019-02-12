@@ -44,7 +44,9 @@ $ cleos push action user1 hiauth '["user2"]' -p user2@active <-- this should be 
 If you want to redploy it in new clear environment, then     
 you can reset environment by calling     
 ./envReboot.sh in the folder  ~/eos-script/installation/    
-
+  
+I also prepare the project for eosio.token. you can know how to create your cash !   
+https://github.com/milochen0418/eosio.token enjoy it !    
 
 # More information    
 In the following, It's detail about how to impleemnt eos-script.     
