@@ -12,8 +12,8 @@ nodeos -e -p eosio \
 --data-dir /home/joanmirochen/eos/contracts/eosio/data \
 --config-dir /home/joanmirochen/eos/contracts/eosio/config \
 --access-control-allow-origin='*' \
---contracts-console \
 --http-validate-host=false \
+--contracts-console \
 --verbose-http-errors \
 --filter-on='*' >> $(dirname $0)/nodeos.log 2>&1 &
 
