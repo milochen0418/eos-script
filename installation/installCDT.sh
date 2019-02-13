@@ -14,7 +14,7 @@ fi
 
 
 if [ $UBUNTU_VER = "18.04" ]; then
-	if [ ! -e eosio.cdt-1.5.0-1_amd64.deb ]; then 
+	if [ ! -e eosio.cdt_1.5.0-1_amd64.deb ]; then 
 		#wget https://github.com/EOSIO/eosio.cdt/releases/download/v1.4.1/eosio.cdt-1.4.1.x86_64.deb
 		wget https://github.com/EOSIO/eosio.cdt/releases/download/v1.5.0/eosio.cdt_1.5.0-1_amd64.deb
 	fi
