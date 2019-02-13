@@ -7,6 +7,7 @@ nodeos -e -p eosio \
 --plugin eosio::producer_plugin \
 --plugin eosio::chain_api_plugin \
 --plugin eosio::http_plugin \
+--http-server-address=127.0.0.1:8888 \
 --plugin eosio::history_plugin \
 --plugin eosio::history_api_plugin \
 --data-dir /home/joanmirochen/eos/contracts/eosio/data \
